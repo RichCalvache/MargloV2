@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">Marglo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nombre Usuario</string>
+    <string name="nav_header_subtitle">Total puntaje: 999</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_inicio">Inicio</string>
+
+    <string name="MARGLO">MARGLO</string>
+    <string name="Version_nro">Versión 1.0</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="descripcion_marglo" translatable="false">MARGLO es el nombre que recibe la aplicación que se desarrolla en este proyecto y en el cual se intenta adaptar el programa auditivo secuencial DASL II,  para ayudar a los adultos  mayores con deficiencia auditiva a desarrollar y usar su capacidad auditiva funcional, con el fin de gradualmente alcanzar metas auditivas en  detección, discriminación, identificación y comprensión; y así lograr una mayor adherencia a las ayudas auditivas y disminuir los índices de discapacidad.</string>
+
+    <!-- TODO: botones actividades-->
+    <string name="Reintentar" translatable="false">Reintentar</string>
+    <string name="Siguiente" translatable="false">Siguiente</string>
+    <string name="Iniciar">Iniciar</string>
+    <string name="Parar">Parar</string>
+    <string name="Ayudas">Ayudas</string>
+    <string name="Opciones">Opciones</string>
+    <string name="Instrucciones">Instrucciones</string>
+    <string name="Escuche">Escuché</string>
+    <string name="Paro">Paró</string>
+
+    <string name="Continuar">Continuar…</string>
+
+
+    <string name="No">No</string>
+    <string name="Si">Sí</string>
+
+
+    <!--TODO: TEXTSVIEWS pantalla INSTRUCCIONES -->
+    <string name="Reproducir_instrucciones">Reproducir instrucciones:</string>
+    <string name="Reproducir_ejemplo">Reproducir ejemplos:</string>
+    <string name="Ejemplo">Ejemplo</string>
+
+
+    <!--TODO: TEXTSVIEWS NOMBRES ACTIVIDADES -->
+    <string name="conc_1_nombre">Actividad 1. Sonidos graves.</string>
+    <string name="conc_2_nombre">Actividad 2. Sonidos continuos.</string>
+
+    <string name="discr_1_nombre">Actividad 1. Sonidos cortos y largos.</string>
+    <string name="discr_2_nombre">Actividad 2. Vocales, sílabas o palabras. </string>
+    <string name="discr_3_nombre">Actividad 3. Secuencias de vocales.</string>
+    <string name="discr_4_nombre">Actividad 4. Diferencia de consonantes.</string>
+    <string name="discr_5_nombre">Actividad 5. Frases y sonidos.</string>
+
+    <string name="ident_1_nombre">Actividad 1. Memoria.</string>
+    <string name="ident_2_nombre">Actividad 2. Singular y plural.</string>
+    <string name="ident_3_nombre">Actividad 3. Identificación de un elemento.</string>
+    <string name="ident_4_nombre">Actividad 4. Identificación de frases.</string>
+
+    <string name="comp_1_nombre">Actividad 1. Categorías.</string>
+    <string name="comp_2_nombre">Actividad 2. Posición de elementos.</string>
+    <string name="comp_3_nombre">Actividad 3. Memoria y secuencia.</string>
+    <string name="comp_4_nombre">Actividad 4. Descripción de imagen.</string>
+    <string name="comp_5_nombre">Actividad 5. Sí o no.</string>
+
+
+    <!--TODO: TEXTSVIEWS INSTRUCCIONES -->
+    <string name="conc_1_instrucciones">Presione el botón rojo cuando escuche un sonido.</string>
+    <string name="conc_2_instrucciones">Presione el botón rojo cuando deje de escuchar el sonido.</string>
+
+
+    <string name="discr_1_instrucciones">Seleccione sonido corto o sonido largo.</string>
+    <string name="discr_2_instrucciones">Seleccione la palabra que contenga el sonido de la vocal que escuche.</string>
+    <string name="discr_3_instrucciones">Seleccione la palabra que tenga el sonido de la vocal o las vocales que escuche.</string>
+    <string name="discr_4_instrucciones">Seleccione las palabras que escuche.</string>
+    <string name="discr_5_instrucciones">Escuche atentamente y seleccione entre un sonido ambiental o una frase.</string>
+
+    <string name="ident_1_0_instrucciones">Esta actividad se divide en 3 pasos, atento a cada una de las instrucciones.</string>
+    <string name="ident_1_1_instrucciones">A continuación va a prestar atención a los siguientes sonidos, la imagen que se indica representa al sonido que usted escuchará.</string>
+    <string name="ident_1_2_instrucciones">Escuchará nuevamente un sonido, debe estar muy atento, de acuerdo a ese sonido, seleccionará la imagen correspondiente.</string>
+    <string name="ident_1_3_instrucciones">Muy bien, el último paso es un juego de memoria… ¡Vamos!</string>
+
+    <string name="ident_1_juego_instrucciones">El juego consiste en emparejar cada sonido con la imagen correspondiente.</string>
+    <string name="ident_2_instrucciones">Seleccione la imagen que corresponde a la palabra que escuche.</string>
+    <string name="ident_3_instrucciones">Seleccione la imagen según la instrucción inicial.</string>
+    <string name="ident_4_instrucciones">Seleccione la imagen que corresponde a lo que escuche.</string>
+
+    <string name="comp_1_instrucciones">Seleccione la imagen según la instrucción inicial.</string>
+    <string name="comp_2_instrucciones">Escuche una instrucción y luego seleccione la imagen corespondiente.</string>
+    <string name="comp_3_instrucciones">Seleccione la imagen según los objetos nombrados.</string>
+    <string name="comp_4_instrucciones">Escuche una descripción y luego seleccione la imagen corespondiente.</string>
+    <string name="comp_5_instrucciones">Seleccione SÍ o NO después de escuchar cada afirmación.</string>
+
+
+    <!--TODO: TEXTSVIEWS FELICITACION ERRADO -->
+    <string name="Reintentar_dospuntos">Reintentar:</string>
+    <string name="Reintentar_con_ayudas">Reintentar con ayudas:</string>
+    <string name="Siguiente_actividad">Siguiente actividad:</string>
+    <string name="Felicitaciones">¡Felicitaciones!</string>
+    <string name="Lo_siento">¡Lo siento!</string>
+    <string name="Vuelve_a_intentarlo">Vuelve a intentarlo…</string>
+    <string name="Lo_siento_vuelve_a_intentarlo_land">¡Lo siento! Vuelve a intentarlo…</string>
+    <string name="Puntos">Puntos:</string>
+    <string name="Puntaje_de_Actividad">Puntaje de Actividad:</string>
+
+    <!--TODO: TEXTSVIEWS ESCUCHE SELECCIONE -->
+    <string name="Escuche_atentamente">Escuche atentamente:</string>
+    <string name="Escuche_los_sonidos">Escuche los sonidos:</string>
+
+    <string name="Escuche_el_sonido">Escuche el sonido:</string>
+
+
+    <string name="Escuche_la_palabra">Escuche la palabra:</string>
+    <string name="Escuche_las_palabras">Escuche las palabras:</string>
+    <string name="Escuche_la_instruccion">Escuche la instrucción:</string>
+    <string name="Escuche_la_descripcion">Escuche la descripción:</string>
+    <string name="Escuche_la_afirmacion">Escuche la afirmación:</string>
+
+    <string name="Escuche_la_vocal">Escuche la vocal:</string>
+    <string name="Escuche_las_vocales">Escuche las vocales:</string>
+
+    <string name="Escuche_la_frase_o_palabra">Escuche la frase o palabra:</string>
+
+
+    <string name="Seleccione_una_imagen">Seleccione una imagen</string>
+    <string name="Seleccione_la_respuesta">Seleccione la respuesta</string>
+    <string name="Seleccione_una_opcion">Seleccione una opción</string>
+
+    <string name="Seleccione_sonido_corto">Seleccione sonido CORTO</string>
+    <string name="Seleccione_sonido_largo">Seleccione sonido LARGO</string>
+
+
+    <!--TODO: TEXTSVIEWS ACIERTOS FALLASTE -->
+
+    <string name="Correcto">¡Correcto!</string>
+    <string name="Incorrecto">¡Incorrecto!</string>
+    <string name="Fallaste">¡Fallaste!</string>
+    <string name="volver_al_inicio">Volver al inicio:</string>
+    <string name="terminaste_todas_las_actividades">¡Felicitaciones! Terminaste todas las actividades...</string>
+
+    <!--TODO: TEXTSVIEWS PREGUNTAS -->
+    <string name="cual_mas_corto">¿Cuál sonido fue más corto?</string>
+    <string name="cual_mas_largo">¿Cuál sonido fue más largo?</string>
+
+
+
+    <string name="pregunta_frase_o_sonido">¿Escuchaste la frase o el sonido?</string>
+
+    <string name="pregunta_singular_o_plural">¿Escuchaste la palabra en singular o en plural?</string>
+
+
+    Siguiente actividad:
+
+    <!-- TODO: strings menu habilidades -->
+    <string name="conciencia_nombre">Habilidad 1. Detección</string>
+    <string name="conciencia_descripcion">Conciencia del sonido</string>
+
+    <string name="fonetica_nombre">Habilidad 2. Discriminación</string>
+    <string name="fonetica_descripcion">Discriminación</string>
+
+    <string name="identificación_nombre">Habilidad 3. Identificación</string>
+    <string name="identificación_descripcion">Identificación</string>
+
+    <string name="comprension_nombre">Habilidad 4. Comprensión</string>
+    <string name="comprension_descripcion">Comprensión auditiva</string>
+
+    <!-- TODO: strings actividades conciencia -->
+
+    <string name="actividad123_nombre">Actividad 1–2–3. Responde a la presencia de un sonido</string>
+    <string name="actividad123_descripcion">El usuario indica cuando escucha un sonido fuerte (Golpe de tambor),una sílaba (ba) o un ruido fuerte del medio ambiente.</string>
+
+    <string name="actividad45_nombre">Actividad 4–5. Indica cuando se detiene un sonido continuo</string>
+    <string name="actividad45_descripcion">El usuario indica cuando se detiene un ruido continuo fuerte del medio ambiente, una silaba sostenida o una palabra continua.</string>
+
+    <string name="actividad8910_nombre">Actividad 8+9+10. Discriminar sonidos ambientales (2, 3 y 4 opciones)</string>
+    <string name="actividad8910_descripcion">: El usuario debe discriminar sonidos conocidos entre conjuntos de varios patrones (2, 3 y 4).Contiene clases de sonidos como: cortos, discontinuos y continuos.</string>
+
+
+    <string name="actividad1_nombre">Actividad 1. Responde a la presencia de un sonido fuerte</string>
+    <string name="actividad1_descripcion">El usuario indica cuando escucha un sonido fuerte, de frecuencia grave (Golpe de tambor).</string>
+
+    <string name="actividad2_nombre">Actividad 2. Responde a la presencia de un sonido del habla fuerte</string>
+    <string name="actividad2_descripcion">El usuario indica cuando escucha una sílaba (ba) o una palabra.</string>
+
+    <string name="actividad3_nombre">Actividad 3. Responde a la presencia de sonidos gruesos del medio ambiente</string>
+    <string name="actividad3_descripcion">El usuario indica cuando escucha un ruido fuerte del medio ambiente.</string>
+
+    <string name="actividad4_nombre">Actividad 4. Indica cuando se detiene un sonido continuo del medio ambiente</string>
+    <string name="actividad4_descripcion">El usuario indica cuando se detiene un ruido fuerte del medio ambiente.</string>
+
+    <string name="actividad5_nombre">Actividad 5. Indica cuando se detiene una sílaba o una palabra </string>
+    <string name="actividad5_descripcion">El usuario indica cuando se detiene una silaba sostenida o una palabra continua.</string>
+
+    <string name="actividad6_nombre">Actividad 8. Discrimina entre dos sonidos del medio ambiente</string>
+    <string name="actividad6_descripcion">El usuario discrimina entre sonidos: discontinuos y continuos. Ejemplo: Golpe en la puerta vs aspiradora, pito de carro vs radio de carro.</string>
+
+    <string name="actividad7_nombre">Actividad 9. Discrimina entre tres sonidos del medio ambiente</string>
+    <string name="actividad7_descripcion">El usuario discrimina entre tres clases de sonidos: cortos, discontinuos y continuos. Ejemplo: tambor, pandereta, trompeta; puerta, teléfono, música.</string>
+
+    <string name="actividad8_nombre">Actividad 10. Discrimina entre cuatro sonidos del medio ambiente</string>
+    <string name="actividad8_descripcion">El usuario discrimina entre cuatro opciones. Contiene clases de sonidos como: cortos, discontinuos y continuos.</string>
+
+    <string name="actividad9_nombre">Actividad 13. Identifica sonidos comunes del medio ambiente</string>
+    <string name="actividad9_descripcion">El usuario identifica el sonido ente un conjunto abierto de sonidos. Puede ser un juego de lotería.</string>
+
+
+    <!-- TODO: strings actividades fonetica -->
+
+    <string name="actividad1_nombre_fonetica">Actividad 1. Discriminar sonido corto staccato de un sonido largo continuo</string>
+    <string name="actividad1_descripcion_fonetica">Círculo para sonidos cortos y línea punteada para sonidos largos. Primero claves visuales, luego audición sola</string>
+
+    <string name="actividad2_nombre_fonetica">Actividad 2. Discriminar entre sílabas repetidas</string>
+    <string name="actividad2_descripcion_fonetica">2.	Discriminar entre sílabas repetidas utilizando una velocidad rápida y sílabas repetidas utilizando una velocidad lenta</string>
+
+    <string name="actividad3_nombre_fonetica">Actividad 3. Discrimina entre vocales que se diferencian en la información del primer formante en contexto de sílaba o palabra</string>
+    <string name="actividad3_descripcion_fonetica">En un conjunto de 2 opciones discrimina entre vocales que se diferencian en la información del primer formante en contexto de sílaba o palabra</string>
+
+    <string name="actividad4_nombre_fonetica">Actividad 4. Discrimina entre vocales con primer y segundo formante similar en contexto de sílaba o palabra </string>
+    <string name="actividad4_descripcion_fonetica">Discrimina entre vocales con primer y segundo formante similar en contexto de sílaba o palabra</string>
+
+    <string name="actividad5_nombre_fonetica">Actividad 5. Discrimina entre vocales con un primer formante diferente</string>
+    <string name="actividad5_descripcion_fonetica">Discrimina entre vocales con un primer formante diferente</string>
+
+    <string name="actividad6_nombre_fonetica">Actividad 6. Discrimina entre vocales y secuencias vocálicas decrecientes similar en contexto de sílaba o palabra</string>
+    <string name="actividad6_descripcion_fonetica">Discrimina entre vocales y secuencias vocálicas decrecientes similar en contexto de sílaba o palabra</string>
+
+    <string name="actividad7_nombre_fonetica">Actividad 7. Discrimina acento en sílabas o palabras que utilizan vocales con información diferente en el primer formante</string>
+    <string name="actividad7_descripcion_fonetica">Discrimina acento en sílabas o palabras que utilizan vocales con información diferente en el primer formante</string>
+
+    <string name="actividad8_nombre_fonetica">Actividad 8. Discrimina entre palabras bisílabas que se diferencian únicamente por acento</string>
+    <string name="actividad8_descripcion_fonetica">8.	Discrimina entre palabras bisílabas que se diferencian únicamente por acento</string>
+
+    <string name="actividad9_nombre_fonetica">Actividad 9. En un conjunto de dos opciones, discrimina entre consonantes iniciales que difieren en modo de producción en sílabas o palabras. </string>
+    <string name="actividad9_descripcion_fonetica">9.	En un conjunto de dos opciones, discrimina entre consonantes iniciales que difieren en modo de producción en sílabas o palabras. </string>
+
+    <string name="actividad10_nombre_fonetica">Actividad 10. Discrimina entre silabas y palabras que terminan con consonantes sordas y  silabas y palabras que terminan con sonidos de vocales </string>
+    <string name="actividad10_descripcion_fonetica">10.	Discrimina entre silabas y palabras que terminan con consonantes sordas y  silabas y palabras que terminan con sonidos de vocales </string>
+
+
+    <!-- TODO: strings actividades comprension -->
+
+    <string name="actividad1_nombre_comprension">Actividad 1. Presencia de sonidos graves fuertes</string>
+    <string name="actividad1_descripcion_comprension">El usuario indica cuando escucha un ruido fuerte (tambor).</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: contentDescription IMAGENES -->
+    <string name="contentDescription1">Imagen 1</string>
+    <string name="contentDescription2">Imagen 2</string>
+    <string name="contentDescription3">Imagen 3</string>
+    <string name="contentDescription4">Imagen 4</string>
+
+    <string name="contentDescription_logo">Imagen Logo</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="inicio">Inicio</string>
+
+
+</resources>

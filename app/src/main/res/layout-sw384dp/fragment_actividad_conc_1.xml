@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.marglov2.FragmentsDeteccion.Actividad_conc_1Fragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Iniciar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="@dimen/textSize_botones"
+        app:icon="@drawable/icon_play"
+        app:iconGravity="end"
+        app:iconSize="@dimen/iconSize_botones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_parar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/kisspngspeechpantone4"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Parar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="@dimen/textSize_botones"
+        android:visibility="invisible"
+        app:icon="@drawable/stopbutton"
+        app:iconGravity="textEnd"
+        app:iconSize="@dimen/iconSize_botones"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_escuche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAciertosid"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewAciertosid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/estilo_redondeado_verde"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adamina"
+        android:textSize="@dimen/textSize_Aciertos"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar" />
+
+    <TextView
+        android:id="@+id/textViewFallasteid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/estilo_redondeado_rojo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adamina"
+        android:textSize="@dimen/textSize_Fallaste"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar" />
+
+
+    <TextView
+        android:id="@+id/textviewInstrucc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/kisspngspeechpantone5"
+        android:fontFamily="@font/adamina"
+        android:text="@string/conc_1_instrucciones"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="@dimen/textSize_Instrucciones"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_escuche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_instrucciones"/>
+
+    <Button
+        android:id="@+id/btn_ayudas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Ayudas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/textSize_botones"
+        app:icon="@drawable/support"
+        app:iconGravity="textEnd"
+        app:iconSize="@dimen/iconSize_botones"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_escuche"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/kisspngspeechpantone1"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Escuche"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="48sp"
+        android:visibility="invisible"
+        app:icon="@drawable/icon_conciencia"
+        app:iconGravity="textEnd"
+        app:iconPadding="34dp"
+        app:iconSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_instrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Instrucciones"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/textSize_boton_instrcc"
+        android:visibility="visible"
+        app:icon="@android:drawable/ic_menu_help"
+        app:iconGravity="textEnd"
+        app:iconSize="@dimen/iconSize_boton_instrcc"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_ayudas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#38C172"
+    tools:context=".FragmentsDiscriminacion.Actividad_discr_1_felicitacionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/textViewPuntajeActividad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/correct_animation" />
+
+    <Button
+        android:id="@+id/btn_siguienteid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/medicinafelis1"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Siguiente"
+        android:textSize="@dimen/textSize_boton_siguiente"
+        app:icon="@drawable/double_chevron"
+        app:iconGravity="textEnd"
+        app:iconSize="@dimen/iconSize_boton_siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_reintentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/medicinafelis1"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Reintentar"
+        android:textSize="@dimen/textSize_boton_reintentar"
+        app:icon="@drawable/back_arrow"
+        app:iconGravity="textStart"
+        app:iconSize="@dimen/iconSize_boton_reintentar"
+        app:layout_constraintBottom_toTopOf="@+id/textSiguienteAct"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textSiguienteAct"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Siguiente_actividad"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_siguiente_actividad"
+        app:layout_constraintBottom_toTopOf="@+id/btn_siguienteid"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textfelicitacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/estilo_redondeado_amarillo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Felicitaciones"
+        android:textSize="@dimen/textSize_felicitaciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPuntaje_id" />
+
+    <TextView
+        android:id="@+id/textViewReintentarSinAyudas"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Reintentar_dospuntos"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_reintentar"
+        app:layout_constraintBottom_toTopOf="@id/btn_reintentar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textfelicitacion1" />
+
+    <TextView
+        android:id="@+id/textViewPuntaje_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/estilo_redondeado_amarillo"
+        android:textColor="@color/black"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Puntos"
+        android:textSize="@dimen/textSize_puntos_felicitacion"
+        app:layout_constraintBottom_toTopOf="@+id/textfelicitacion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPuntajeActividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/Puntaje_de_Actividad"
+        android:textSize="@dimen/textSize_puntaje_actividad"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPuntaje_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewstar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/starflat"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPuntaje_id"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/textViewPuntaje_id"
+        app:layout_constraintTop_toTopOf="@id/textViewPuntaje_id"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

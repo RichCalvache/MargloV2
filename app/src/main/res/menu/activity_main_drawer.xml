@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@menu/activity_main_drawer"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicioFragment"
+            android:icon="@drawable/icon_home"
+            android:title="@string/inicio" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_habilidades"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/listaConcienciaFragment"
+            android:icon="@drawable/icon_conciencia"
+            android:title="1. Detección" />
+        <item
+            android:id="@+id/listaDiscriminacionFragment"
+            android:icon="@drawable/icon_discriminacion"
+            android:title="2. Discriminación" />
+        <item
+            android:id="@+id/listaIdentificacionFragment"
+            android:icon="@drawable/icon_identificacion"
+            android:title="3. Identificación" />
+
+        <item
+            android:id="@+id/listaComprensionFragment"
+            android:icon="@drawable/icon_comprension"
+            android:title="4. Comprensión" />
+    </group>
+
+    <group
+        android:id="@+id/menu_buttom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/miPerfilFragment"
+            android:icon="@drawable/icon_user"
+            android:title="Mi perfil" />
+
+        <item
+            android:id="@+id/puntajesFragment"
+            android:icon="@drawable/icon_estrella"
+            android:title="Mis puntajes" />
+
+        <item
+            android:id="@+id/acercaDeFragment"
+            android:icon="@drawable/icon_info"
+            android:title="@string/acerca_de" />
+
+    </group>
+
+
+</menu>

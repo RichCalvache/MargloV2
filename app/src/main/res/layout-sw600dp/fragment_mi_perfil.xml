@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kisspngspeechpantone4"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="false"
+
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical"
+        tools:context=".OtrosFragments.MiPerfilFragment">
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="defaultPosition">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imagenperfil_id"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="96dp"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/nombreperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="Nombres:"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nombreTextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/estilo_recuadro_editar_perfil"
+                android:fontFamily="@font/adamina"
+                android:hint="Nombre de usuario"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/apellidosperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="Apellidos:"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/apellidosTextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/estilo_recuadro_editar_perfil"
+                android:fontFamily="@font/adamina"
+                android:hint="Apellidos"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/edadperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="Edad:"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/edadTextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/estilo_recuadro_editar_perfil"
+                android:fontFamily="@font/adamina"
+                android:hint="Edad"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/generoperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="Género:"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/generoTextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/estilo_recuadro_editar_perfil"
+                android:fontFamily="@font/adamina"
+                android:hint="Género"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/datosperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/adamina"
+                android:text="Datos de contacto:"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/direccionTextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/estilo_recuadro_editar_perfil"
+                android:fontFamily="@font/adamina"
+                android:hint="Dirección"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/ciudadTextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/estilo_recuadro_editar_perfil"
+                android:fontFamily="@font/adamina"
+                android:hint="Ciudad"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/celularTextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/estilo_recuadro_editar_perfil"
+                android:fontFamily="@font/adamina"
+                android:hint="Número celular"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28dp" />
+
+            <Button
+                android:id="@+id/editar_btnid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="@color/kisspngspeechtherapy1"
+                android:fontFamily="@font/adamina"
+                android:text="Editar"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconGravity="end" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

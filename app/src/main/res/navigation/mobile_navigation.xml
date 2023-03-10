@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/usuarioCreadoFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.marglov2.OtrosFragments.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_menuHabilidadesFragment"
+            app:destination="@id/menuHabilidadesFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuHabilidadesFragment"
+        android:name="com.example.marglov2.OtrosFragments.MenuHabilidadesFragment"
+        android:label="Menú Habilidades"
+        tools:layout="@layout/fragment_menu_habilidades">
+        <action
+            android:id="@+id/action_menuHabilidadesFragment_to_listaConcienciaFragment"
+            app:destination="@id/listaConcienciaFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_menuHabilidadesFragment_to_listaComprensionFragment"
+            app:destination="@id/listaComprensionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_menuHabilidadesFragment_to_listaFoneticaFragment2"
+            app:destination="@id/listaDiscriminacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_menuHabilidadesFragment_to_listaIdentificacionFragment"
+            app:destination="@id/listaIdentificacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="com.example.marglov2.OtrosFragments.AcercaDeFragment"
+        android:label="Acerca de"
+        tools:layout="@layout/fragment_acerca_de">
+        <action
+            android:id="@+id/action_acercaDeFragment_to_InicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/puntajesFragment"
+        android:name="com.example.marglov2.OtrosFragments.PuntajesFragment"
+        android:label="Puntajes"
+        tools:layout="@layout/fragment_puntajes" >
+        <action
+            android:id="@+id/action_puntajesFragment_to_graficasGeneralFragment"
+            app:destination="@id/graficasGeneralFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaConcienciaFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.ListaConcienciaFragment"
+        android:label="Actividades de Detección"
+        tools:layout="@layout/fragment_lista_conciencia">
+        <action
+            android:id="@+id/action_listaConcienciaFragment_to_actividad_conc_1Fragment"
+            app:destination="@id/actividad_conc_1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaConcienciaFragment_to_actividad_conc_3Fragment"
+            app:destination="@id/actividad_conc_3Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaConcienciaFragment_to_actividad_conc_2Fragment"
+            app:destination="@id/actividad_conc_2Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaComprensionFragment"
+        android:name="com.example.marglov2.FragmentsComprension.ListaComprensionFragment"
+        android:label="Actividades de Comprensión"
+        tools:layout="@layout/fragment_lista_comprension">
+        <action
+            android:id="@+id/action_listaComprensionFragment_to_actividad_comp_1Fragment"
+            app:destination="@id/actividad_comp_1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaComprensionFragment_to_actividad_comp_2Fragment"
+            app:destination="@id/actividad_comp_2Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaComprensionFragment_to_actividad_comp_3Fragment"
+            app:destination="@id/actividad_comp_3Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaComprensionFragment_to_actividad_comp_4Fragment"
+            app:destination="@id/actividad_comp_4Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaComprensionFragment_to_actividad_comp_5Fragment"
+            app:destination="@id/actividad_comp_5Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_1Fragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_1Fragment"
+        android:label="Actividad 1 Detección"
+        tools:layout="@layout/fragment_actividad_conc_1">
+        <action
+            android:id="@+id/action_actividad_conc_1Fragment_to_actividad_conc_1_ayudasFragment"
+            app:destination="@id/actividad_conc_1_ayudasFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_1Fragment_to_actividad_conc_1_felicitacionFragment"
+            app:destination="@id/actividad_conc_1_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_1Fragment_to_actividad_conc_1_erradoFragment"
+            app:destination="@id/actividad_conc_1_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_1Fragment_to_actividad_conc_1_instruccionesFragment"
+            app:destination="@id/actividad_conc_1_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/listaDiscriminacionFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.ListaDiscriminacionFragment"
+        android:label="Actividades de Discriminación"
+        tools:layout="@layout/fragment_lista_discriminacion">
+        <action
+            android:id="@+id/action_listaDiscriminacionFragment_to_actividad_discr_1Fragment"
+            app:destination="@id/actividad_discr_1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaDiscriminacionFragment_to_actividad_discr_2Fragment"
+            app:destination="@id/actividad_discr_2Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaDiscriminacionFragment_to_actividad_discr_3Fragment"
+            app:destination="@id/actividad_discr_3Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaDiscriminacionFragment_to_actividad_discr_4Fragment"
+            app:destination="@id/actividad_discr_4Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaDiscriminacionFragment_to_actividad_conc_3Fragment"
+            app:destination="@id/actividad_conc_3Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_2Fragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_2Fragment"
+        android:label="Actividad 2 Detección"
+        tools:layout="@layout/fragment_actividad_conc_2">
+        <action
+            android:id="@+id/action_actividad_conc_2Fragment_to_actividad_conc_2_ayudasFragment"
+            app:destination="@id/actividad_conc_2_ayudasFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_2Fragment_to_actividad_conc_2_erradoFragment"
+            app:destination="@id/actividad_conc_2_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_2Fragment_to_actividad_conc_2_felicitacionFragment"
+            app:destination="@id/actividad_conc_2_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_2Fragment_to_actividad_conc_2_instruccionesFragment"
+            app:destination="@id/actividad_conc_2_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_3Fragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_3Fragment"
+        android:label="Actividad 1 Discriminación"
+        tools:layout="@layout/fragment_actividad_conc_3">
+        <action
+            android:id="@+id/action_actividad_conc_3Fragment_to_actividad_conc_3_opcionesFragment"
+            app:destination="@id/actividad_conc_3_opcionesFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_3Fragment_to_actividad_conc_3_erradoFragment"
+            app:destination="@id/actividad_conc_3_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_3Fragment_to_actividad_conc_3_felicitacionFragment"
+            app:destination="@id/actividad_conc_3_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_conc_3Fragment_to_actividad_conc_3_instruccionesFragment"
+            app:destination="@id/actividad_conc_3_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroUsuarioFragment"
+        android:name="com.example.marglov2.OtrosFragments.RegistroUsuarioFragment"
+        android:label="Registro Usuario" >
+        <action
+            android:id="@+id/action_registroUsuarioFragment_to_usuarioCreadoFragment"
+            app:destination="@id/usuarioCreadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usuarioCreadoFragment"
+        android:name="com.example.marglov2.OtrosFragments.UsuarioCreadoFragment"
+        android:label="UsuarioCreadoFragment" >
+        <action
+            android:id="@+id/action_usuarioCreadoFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment"
+            app:popUpTo="@id/usuarioCreadoFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_usuarioCreadoFragment_to_registroUsuarioFragment"
+            app:destination="@id/registroUsuarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_1_ayudasFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_1_ayudasFragment"
+        android:label="Ayudas Actividad 1 Detección"
+        tools:layout="@layout/fragment_actividad_conc_1_ayudas">
+        <action
+            android:id="@+id/action_actividad_conc_1_ayudasFragment_to_actividad_conc_1Fragment"
+            app:destination="@id/actividad_conc_1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/actividad_conc_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_1_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_1_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_conc_1_felicitacion">
+        <action
+            android:id="@+id/action_actividad_conc_1_felicitacionFragment_to_actividad_conc_2Fragment"
+            app:destination="@id/actividad_conc_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_1Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_conc_1_felicitacionFragment_to_actividad_conc_1Fragment"
+            app:destination="@id/actividad_conc_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_1_erradoFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_1_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_conc_1_errado">
+        <action
+            android:id="@+id/action_actividad_conc_1_erradoFragment_to_actividad_conc_1Fragment"
+            app:destination="@id/actividad_conc_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_2_ayudasFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_2_ayudasFragment"
+        android:label="Ayudas Actividad 2 Detección"
+        tools:layout="@layout/fragment_actividad_conc_2_ayudas">
+        <action
+            android:id="@+id/action_actividad_conc_2_ayudasFragment_to_actividad_conc_2Fragment"
+            app:destination="@id/actividad_conc_2Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/actividad_conc_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_2_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_2_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_conc_2_felicitacion">
+        <action
+            android:id="@+id/action_actividad_conc_2_felicitacionFragment_to_actividad_conc_2Fragment"
+            app:destination="@id/actividad_conc_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_2Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_conc_2_felicitacionFragment_to_actividad_conc_3Fragment"
+            app:destination="@id/actividad_conc_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_2_erradoFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_2_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_conc_2_errado">
+        <action
+            android:id="@+id/action_actividad_conc_2_erradoFragment_to_actividad_conc_2Fragment"
+            app:destination="@id/actividad_conc_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_3_opcionesFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_3_opcionesFragment"
+        android:label="Opciones Actividad 1 Discriminación"
+        tools:layout="@layout/fragment_actividad_conc_3_opciones">
+        <action
+            android:id="@+id/action_actividad_conc_3_opcionesFragment_to_actividad_conc_3Fragment"
+            app:destination="@id/actividad_conc_3Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/actividad_conc_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_3_erradoFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_3_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_conc_3_errado">
+        <action
+            android:id="@+id/action_actividad_conc_3_erradoFragment_to_actividad_conc_3Fragment"
+            app:destination="@id/actividad_conc_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_3_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_3_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_conc_3_felicitacion">
+        <action
+            android:id="@+id/action_actividad_conc_3_felicitacionFragment_to_actividad_conc_3Fragment"
+            app:destination="@id/actividad_conc_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_3Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_conc_3_felicitacionFragment_to_actividad_discr_1Fragment"
+            app:destination="@id/actividad_discr_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_conc_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/miPerfilFragment"
+        android:name="com.example.marglov2.OtrosFragments.MiPerfilFragment"
+        android:label="Mi Perfil"
+        tools:layout="@layout/fragment_mi_perfil">
+        <action
+            android:id="@+id/action_miPerfilFragment_to_editarPerfilFragment"
+            app:destination="@id/editarPerfilFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarPerfilFragment"
+        android:name="com.example.marglov2.OtrosFragments.EditarPerfilFragment"
+        android:label="Editar Perfil"
+        tools:layout="@layout/fragment_editar_perfil" >
+        <action
+            android:id="@+id/action_editarPerfilFragment_to_miPerfilFragment"
+            app:destination="@id/miPerfilFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/miPerfilFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaIdentificacionFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.ListaIdentificacionFragment"
+        android:label="Actividades de Identificación"
+        tools:layout="@layout/fragment_lista_identificacion" >
+        <action
+            android:id="@+id/action_listaIdentificacionFragment_to_actividad_ident_3Fragment"
+            app:destination="@id/actividad_ident_3Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaIdentificacionFragment_to_actividad_ident_1Fragment"
+            app:destination="@id/actividad_ident_1Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaIdentificacionFragment_to_actividad_ident_2Fragment"
+            app:destination="@id/actividad_ident_2Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_listaIdentificacionFragment_to_actividad_ident_4Fragment"
+            app:destination="@id/actividad_ident_4Fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_1Fragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_1Fragment"
+        android:label="Actividad 2 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_1" >
+        <action
+            android:id="@+id/action_actividad_discr_1Fragment_to_actividad_discr_1_erradoFragment"
+            app:destination="@id/actividad_discr_1_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_discr_1Fragment_to_actividad_discr_1_felicitacionFragment"
+            app:destination="@id/actividad_discr_1_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_discr_1Fragment_to_actividad_discr_1_instruccionesFragment"
+            app:destination="@id/actividad_discr_1_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_2Fragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_2Fragment"
+        android:label="Actividad 3 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_2" >
+        <action
+            android:id="@+id/action_actividad_discr_2Fragment_to_actividad_discr_2_instruccionesFragment"
+            app:destination="@id/actividad_discr_2_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+        <action
+            android:id="@+id/action_actividad_discr_2Fragment_to_actividad_discr_2_erradoFragment"
+            app:destination="@id/actividad_discr_2_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_discr_2Fragment_to_actividad_discr_2_felicitacionFragment"
+            app:destination="@id/actividad_discr_2_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_3Fragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_3Fragment"
+        android:label="Actividad 4 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_3" >
+        <action
+            android:id="@+id/action_actividad_discr_3Fragment_to_actividad_discr_3_instruccionesFragment"
+            app:destination="@id/actividad_discr_3_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+        <action
+            android:id="@+id/action_actividad_discr_3Fragment_to_actividad_discr_3_erradoFragment"
+            app:destination="@id/actividad_discr_3_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_discr_3Fragment_to_actividad_discr_3_felicitacionFragment"
+            app:destination="@id/actividad_discr_3_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_4Fragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_4Fragment"
+        android:label="Actividad 5 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_4" >
+        <action
+            android:id="@+id/action_actividad_discr_4Fragment_to_actividad_discr_4_erradoFragment"
+            app:destination="@id/actividad_discr_4_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_discr_4Fragment_to_actividad_discr_4_felicitacionFragment"
+            app:destination="@id/actividad_discr_4_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_discr_4Fragment_to_actividad_discr_4_instruccionesFragment"
+            app:destination="@id/actividad_discr_4_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_4_erradoFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_4_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_4_errado">
+        <action
+            android:id="@+id/action_actividad_discr_4_erradoFragment_to_actividad_discr_4Fragment"
+            app:destination="@id/actividad_discr_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_4Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_4_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_4_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_4_felicitacion">
+        <action
+            android:id="@+id/action_actividad_discr_4_felicitacionFragment_to_actividad_discr_4Fragment"
+            app:destination="@id/actividad_discr_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_4Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_discr_4_felicitacionFragment_to_actividad_ident_1Fragment"
+            app:destination="@id/actividad_ident_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_4Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_1_erradoFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_1_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_1_errado">
+        <action
+            android:id="@+id/action_actividad_discr_1_erradoFragment_to_actividad_discr_1Fragment"
+            app:destination="@id/actividad_discr_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_1_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_1_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_1_felicitacion">
+        <action
+            android:id="@+id/action_actividad_discr_1_felicitacionFragment_to_actividad_discr_1Fragment"
+            app:destination="@id/actividad_discr_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_1Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_discr_1_felicitacionFragment_to_actividad_discr_2Fragment"
+            app:destination="@id/actividad_discr_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_1_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_1_instruccionesFragment"
+        android:label="Instrucciones Actividad 2 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_1_instrucciones"/>
+    <fragment
+        android:id="@+id/actividad_discr_2_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_2_instruccionesFragment"
+        android:label="Instrucciones Actividad 3 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_2_instrucciones"/>
+    <fragment
+        android:id="@+id/actividad_discr_2_erradoFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_2_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_2_errado">
+        <action
+            android:id="@+id/action_actividad_discr_2_erradoFragment_to_actividad_discr_2Fragment"
+            app:destination="@id/actividad_discr_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_2_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_2_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_2_felicitacion">
+        <action
+            android:id="@+id/action_actividad_discr_2_felicitacionFragment_to_actividad_discr_2Fragment"
+            app:destination="@id/actividad_discr_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_2Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_discr_2_felicitacionFragment_to_actividad_discr_3Fragment"
+            app:destination="@id/actividad_discr_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_4_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_4_instruccionesFragment"
+        android:label="Instrucciones Actividad 5 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_4_instrucciones"/>
+    <fragment
+        android:id="@+id/actividad_discr_3_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_3_instruccionesFragment"
+        android:label="Instrucciones Actividad 4 Discriminación"
+        tools:layout="@layout/fragment_actividad_discr_3_instrucciones"/>
+    <fragment
+        android:id="@+id/actividad_discr_3_erradoFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_3_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_3_errado">
+        <action
+            android:id="@+id/action_actividad_discr_3_erradoFragment_to_actividad_discr_3Fragment"
+            app:destination="@id/actividad_discr_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/actividad_discr_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_discr_3_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsDiscriminacion.Actividad_discr_3_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_discr_3_felicitacion">
+        <action
+            android:id="@+id/action_actividad_discr_3_felicitacionFragment_to_actividad_discr_3Fragment"
+            app:destination="@id/actividad_discr_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_3Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_discr_3_felicitacionFragment_to_actividad_discr_4Fragment"
+            app:destination="@id/actividad_discr_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_discr_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_conc_2_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_2_instruccionesFragment"
+        android:label="Instrucciones Actividad 2 Detección"
+        tools:layout="@layout/fragment_actividad_conc_2_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_conc_1_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_1_instruccionesFragment"
+        android:label="Instrucciones Actividad 1 Detección"
+        tools:layout="@layout/fragment_actividad_conc_1_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_conc_3_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsDeteccion.Actividad_conc_3_instruccionesFragment"
+        android:label="Instrucciones Actividad 1 Discriminación"
+        tools:layout="@layout/fragment_actividad_conc_3_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_ident_3Fragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_3Fragment"
+        android:label="Actividad 3 Identificación"
+        tools:layout="@layout/fragment_actividad_ident_3">
+        <action
+            android:id="@+id/action_actividad_ident_3Fragment_to_actividad_ident_3_instruccionesFragment"
+            app:destination="@id/actividad_ident_3_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_ident_3Fragment_to_actividad_ident_3_erradoFragment"
+            app:destination="@id/actividad_ident_3_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_ident_3Fragment_to_actividad_ident_3_felicitacionFragment"
+            app:destination="@id/actividad_ident_3_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_3_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_3_instruccionesFragment"
+        android:label="Instrucciones Actividad 3 Identificación"
+        tools:layout="@layout/fragment_actividad_ident_3_instrucciones"/>
+    <fragment
+        android:id="@+id/actividad_ident_3_erradoFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_3_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_ident_3_errado">
+        <action
+            android:id="@+id/action_actividad_ident_3_erradoFragment_to_actividad_ident_3Fragment"
+            app:destination="@id/actividad_ident_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_3_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_3_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_ident_3_felicitacion">
+        <action
+            android:id="@+id/action_actividad_ident_3_felicitacionFragment_to_actividad_ident_3Fragment"
+            app:destination="@id/actividad_ident_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_3Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_ident_3_felicitacionFragment_to_actividad_ident_4Fragment"
+            app:destination="@id/actividad_ident_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_4Fragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_4Fragment"
+        android:label="Actividad 4 identificación"
+        tools:layout="@layout/fragment_actividad_ident_4">
+        <action
+            android:id="@+id/action_actividad_ident_4Fragment_to_actividad_ident_4_instruccionesFragment"
+            app:destination="@id/actividad_ident_4_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_ident_4Fragment_to_actividad_ident_4_erradoFragment"
+            app:destination="@id/actividad_ident_4_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_ident_4Fragment_to_actividad_ident_4_felicitacionFragment"
+            app:destination="@id/actividad_ident_4_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_1Fragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_1Fragment"
+        android:label="Actividad 1 Identificación"
+        tools:layout="@layout/fragment_actividad_ident_1" >
+        <action
+            android:id="@+id/action_actividad_ident_1Fragment_to_actividad_ident_1_juegoFragment"
+            app:destination="@id/actividad_ident_1_juegoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_1_juegoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_2Fragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_2Fragment"
+        android:label="Actividad 2 Identificación"
+        tools:layout="@layout/fragment_actividad_ident_2" >
+        <action
+            android:id="@+id/action_actividad_ident_2Fragment_to_actividad_ident_2_instruccionesFragment"
+            app:destination="@id/actividad_ident_2_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_ident_2Fragment_to_actividad_ident_2_erradoFragment"
+            app:destination="@id/actividad_ident_2_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_ident_2Fragment_to_actividad_ident_2_felicitacionFragment"
+            app:destination="@id/actividad_ident_2_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_4_erradoFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_4_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_ident_4_errado" >
+        <action
+            android:id="@+id/action_actividad_ident_4_erradoFragment_to_actividad_ident_4Fragment"
+            app:destination="@id/actividad_ident_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/actividad_ident_4Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_4_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_4_instruccionesFragment"
+        android:label="Instrucciones Actividad 4 Identificación"
+        tools:layout="@layout/fragment_actividad_ident_4_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_ident_4_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_4_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_ident_4_felicitacion" >
+        <action
+            android:id="@+id/action_actividad_ident_4_felicitacionFragment_to_actividad_ident_4Fragment"
+            app:destination="@id/actividad_ident_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_4Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_ident_4_felicitacionFragment_to_actividad_comp_1Fragment"
+            app:destination="@id/actividad_comp_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_4Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_1Fragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_1Fragment"
+        android:label="Actividad 1 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_1" >
+        <action
+            android:id="@+id/action_actividad_comp_1Fragment_to_actividad_comp_1_instruccionesFragment"
+            app:destination="@id/actividad_comp_1_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_comp_1Fragment_to_actividad_comp_1_erradoFragment"
+            app:destination="@id/actividad_comp_1_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_comp_1Fragment_to_actividad_comp_1_felicitacionFragment"
+            app:destination="@id/actividad_comp_1_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_2Fragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_2Fragment"
+        android:label="Actividad 2 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_2" >
+        <action
+            android:id="@+id/action_actividad_comp_2Fragment_to_actividad_comp_2_instruccionesFragment"
+            app:destination="@id/actividad_comp_2_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_comp_2Fragment_to_actividad_comp_2_erradoFragment"
+            app:destination="@id/actividad_comp_2_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_comp_2Fragment_to_actividad_comp_2_felicitacionFragment"
+            app:destination="@id/actividad_comp_2_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_3Fragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_3Fragment"
+        android:label="Actividad 3 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_3" >
+        <action
+            android:id="@+id/action_actividad_comp_3Fragment_to_actividad_comp_3_instruccionesFragment"
+            app:destination="@id/actividad_comp_3_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_comp_3Fragment_to_actividad_comp_3_erradoFragment"
+            app:destination="@id/actividad_comp_3_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_comp_3Fragment_to_actividad_comp_3_felicitacionFragment"
+            app:destination="@id/actividad_comp_3_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_4Fragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_4Fragment"
+        android:label="Actividad 4 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_4" >
+        <action
+            android:id="@+id/action_actividad_comp_4Fragment_to_actividad_comp_4_instruccionesFragment"
+            app:destination="@id/actividad_comp_4_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_comp_4Fragment_to_actividad_comp_4_erradoFragment"
+            app:destination="@id/actividad_comp_4_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_comp_4Fragment_to_actividad_comp_4_felicitacionFragment"
+            app:destination="@id/actividad_comp_4_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_5Fragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_5Fragment"
+        android:label="Actividad 5 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_5" >
+        <action
+            android:id="@+id/action_actividad_comp_5Fragment_to_actividad_comp_5_instruccionesFragment"
+            app:destination="@id/actividad_comp_5_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_actividad_comp_5Fragment_to_actividad_comp_5_erradoFragment"
+            app:destination="@id/actividad_comp_5_erradoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_actividad_comp_5Fragment_to_actividad_comp_5_felicitacionFragment"
+            app:destination="@id/actividad_comp_5_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_2_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_2_instruccionesFragment"
+        android:label="Instrucciones Actividad 2 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_2_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_comp_3_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_3_instruccionesFragment"
+        android:label="Instrucciones Actividad 3 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_3_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_comp_2_erradoFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_2_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_2_errado" >
+        <action
+            android:id="@+id/action_actividad_comp_2_erradoFragment_to_actividad_comp_2Fragment"
+            app:destination="@id/actividad_comp_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_2_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_2_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_2_felicitacion">
+        <action
+            android:id="@+id/action_actividad_comp_2_felicitacionFragment_to_actividad_comp_2Fragment"
+            app:destination="@id/actividad_comp_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_2Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_comp_2_felicitacionFragment_to_actividad_comp_3Fragment"
+            app:destination="@id/actividad_comp_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_3_erradoFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_3_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_3_errado" >
+        <action
+            android:id="@+id/action_actividad_comp_3_erradoFragment_to_actividad_comp_3Fragment"
+            app:destination="@id/actividad_comp_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_3_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_3_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_3_felicitacion">
+        <action
+            android:id="@+id/action_actividad_comp_3_felicitacionFragment_to_actividad_comp_3Fragment"
+            app:destination="@id/actividad_comp_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_3Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_comp_3_felicitacionFragment_to_actividad_comp_4Fragment"
+            app:destination="@id/actividad_comp_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_3Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_1_juegoFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_1_juegoFragment"
+        android:label="Juego de memoria"
+        tools:layout="@layout/fragment_actividad_ident_1_juego">
+        <action
+            android:id="@+id/action_actividad_ident_1_juegoFragment_to_actividad_ident_1_juego_instruccionesFragment"
+            app:destination="@id/actividad_ident_1_juego_instruccionesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_actividad_ident_1_juegoFragment_to_actividad_ident_1_felicitacionFragment"
+            app:destination="@id/actividad_ident_1_felicitacionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_1_juego_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_1_juego_instruccionesFragment"
+        android:label="Instrucciones Actividad 1 Identificación"
+        tools:layout="@layout/fragment_actividad_ident_1_juego_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_ident_1_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_1_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_ident_1_felicitacion">
+        <action
+            android:id="@+id/action_actividad_ident_1_felicitacionFragment_to_actividad_ident_2Fragment"
+            app:destination="@id/actividad_ident_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_1Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_ident_1_felicitacionFragment_to_actividad_ident_1Fragment"
+            app:destination="@id/actividad_ident_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_2_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_2_instruccionesFragment"
+        android:label="Instrucciones Actividad 2 Identificación"
+        tools:layout="@layout/fragment_actividad_ident_2_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_ident_2_erradoFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_2_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_ident_2_errado">
+        <action
+            android:id="@+id/action_actividad_ident_2_erradoFragment_to_actividad_ident_2Fragment"
+            app:destination="@id/actividad_ident_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/actividad_ident_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_ident_2_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.Actividad_ident_2_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_ident_2_felicitacion">
+        <action
+            android:id="@+id/action_actividad_ident_2_felicitacionFragment_to_actividad_ident_2Fragment"
+            app:destination="@id/actividad_ident_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_2Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_ident_2_felicitacionFragment_to_actividad_ident_3Fragment"
+            app:destination="@id/actividad_ident_3Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_ident_2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_1_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_1_instruccionesFragment"
+        android:label="Instrucciones Actividad 1 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_1_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_comp_1_erradoFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_1_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_1_errado">
+        <action
+            android:id="@+id/action_actividad_comp_1_erradoFragment_to_actividad_comp_1Fragment"
+            app:destination="@id/actividad_comp_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_1_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_1_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_1_felicitacion">
+        <action
+            android:id="@+id/action_actividad_comp_1_felicitacionFragment_to_actividad_comp_2Fragment"
+            app:destination="@id/actividad_comp_2Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_1Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_comp_1_felicitacionFragment_to_actividad_comp_1Fragment"
+            app:destination="@id/actividad_comp_1Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_4_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_4_instruccionesFragment"
+        android:label="Instrucciones Actividad 4 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_4_instrucciones" />
+    <fragment
+        android:id="@+id/actividad_comp_4_erradoFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_4_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_4_errado">
+        <action
+            android:id="@+id/action_actividad_comp_4_erradoFragment_to_actividad_comp_4Fragment"
+            app:destination="@id/actividad_comp_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_4Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_4_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_4_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_4_felicitacion">
+        <action
+            android:id="@+id/action_actividad_comp_4_felicitacionFragment_to_actividad_comp_4Fragment"
+            app:destination="@id/actividad_comp_4Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_4Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_actividad_comp_4_felicitacionFragment_to_actividad_comp_5Fragment"
+            app:destination="@id/actividad_comp_5Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_4Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_5_erradoFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_5_erradoFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_5_errado">
+        <action
+            android:id="@+id/action_actividad_comp_5_erradoFragment_to_actividad_comp_5Fragment"
+            app:destination="@id/actividad_comp_5Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_5Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_5_felicitacionFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_5_felicitacionFragment"
+        android:label="Puntaje de Actividad"
+        tools:layout="@layout/fragment_actividad_comp_5_felicitacion">
+        <action
+            android:id="@+id/action_actividad_comp_5_felicitacionFragment_to_actividad_comp_5Fragment"
+            app:destination="@id/actividad_comp_5Fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/actividad_comp_5Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/actividad_comp_5_instruccionesFragment"
+        android:name="com.example.marglov2.FragmentsComprension.Actividad_comp_5_instruccionesFragment"
+        android:label="Instrucciones Actividad 5 Comprensión"
+        tools:layout="@layout/fragment_actividad_comp_5_instrucciones" />
+
+    <fragment
+        android:id="@+id/juego_presentarFragment"
+        android:name="com.example.marglov2.FragmentsIdentificación.juego_presentarFragment"
+        android:label="fragment_juego_presentar"
+        tools:layout="@layout/fragment_juego_presentar" />
+    <fragment
+        android:id="@+id/graficas1Fragment"
+        android:name="com.example.marglov2.OtrosFragments.Graficas1Fragment"
+        android:label="fragment_graficas1"
+        tools:layout="@layout/fragment_graficas1" />
+    <fragment
+        android:id="@+id/graficasGeneralFragment"
+        android:name="com.example.marglov2.OtrosFragments.GraficasGeneralFragment"
+        android:label="Gráficas Generales"
+        tools:layout="@layout/fragment_graficas_general" >
+        <action
+            android:id="@+id/action_graficasGeneralFragment_to_graficasIndividualesFragment"
+            app:destination="@id/graficasIndividualesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/graficasIndividualesFragment"
+        android:name="com.example.marglov2.OtrosFragments.GraficasIndividualesFragment"
+        android:label="Gráficas por Fecha"
+        tools:layout="@layout/fragment_graficas_individuales" />
+
+</navigation>

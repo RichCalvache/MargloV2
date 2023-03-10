@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">236dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="textSize_botones">24sp</dimen>
+    <dimen name="iconSize_botones">24sp</dimen>
+
+    <dimen name="textSize_boton_instrcc">24sp</dimen>
+    <dimen name="iconSize_boton_instrcc">24sp</dimen>
+
+
+
+    <dimen name="textSize_Escuche">30sp</dimen>
+    <dimen name="textSize_Seleccione">30sp</dimen>
+
+    <dimen name="textSize_Pregunta">28sp</dimen>
+
+    <dimen name="textSize_Arrastre">28sp</dimen>
+
+    <dimen name="textSize_Aciertos">28sp</dimen>
+    <dimen name="textSize_Fallaste">28sp</dimen>
+
+    <dimen name= "textSize_vuelve_intentarlo">34sp</dimen>
+    <dimen name= "textSize_lo_siento">28sp</dimen>
+    <dimen name= "textSize_puntaje_actividad">28sp</dimen>
+    <dimen name= "textSize_puntos">42sp</dimen>
+    <dimen name= "textSize_puntos_felicitacion">34sp</dimen>
+
+    <dimen name="textSize_boton_reintentar">24sp</dimen>
+    <dimen name="iconSize_boton_reintentar">24sp</dimen>
+
+    <dimen name="textSize_boton_siguiente">24sp</dimen>
+    <dimen name="iconSize_boton_siguiente">24sp</dimen>
+
+    <dimen name="textSize_siguiente_actividad">24sp</dimen>
+    <dimen name="textSize_felicitaciones">28sp</dimen>
+    <dimen name="textSize_reintentar">24sp</dimen>
+    <dimen name="textSize_felicitaciones_terminaste">30sp</dimen>
+
+
+    <dimen name="textSize_Instrucciones">34sp</dimen>
+    <dimen name="textSize_Instrucciones_instr">34sp</dimen>
+
+    <dimen name="textSize_reproducir">24sp</dimen>
+
+    <dimen name="sizeText_Editar">24sp</dimen>
+
+    <dimen name="margen_izquierdo">16dp</dimen>
+    <dimen name="margen_derecho">16dp</dimen>
+    <dimen name="layout_marginStart">32dp</dimen>
+
+    <dimen name="marginStart_anim_sonido">32dp</dimen>
+    <dimen name="marginTop_anim_sonido">32dp</dimen>
+    <dimen name="marginEnd_anim_sonido">32dp</dimen>
+
+    <dimen name="textSize_ejeY">24dp</dimen>
+    <dimen name="textSize_valoresBarras">18dp</dimen>
+</resources>

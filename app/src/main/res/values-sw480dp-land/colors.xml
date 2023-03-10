@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#7C83BC</color>
+    <color name="purple_2000">#8684BF</color>
+    <color name="purple_500">#6568FF</color>
+    <color name="purple_700">#333E83</color>
+    <color name="purple_7000">#293764</color>
+    <color name="teal_200">#6BE8D9</color>
+    <color name="teal_2000">#FF03DAC5</color>
+    <color name="teal_3000">#B9B8D9</color>
+    <color name="teal_700">#7C83BC</color>
+    <color name="teal_7000">#7C83BC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verdeclarito">#DBE8BD</color>
+    <color name="naranjaclarito">#EB3C27</color>
+    <color name="naranja"> #D95525</color>
+    <color name="verde">#58FFA9</color>
+    <color name="colornavheader">#D98B48</color>
+    <color name="colorboton">#FFF44336</color>
+    <color name="rojo1">#F21D2F</color>
+    <color name="verde_aciertos">#CCFF90</color>
+    <color name="amarillo">#FFEB3B</color>
+    <color name="amarillo_frase_ident4">#FFF176</color>
+    <color name="cafe">#6E4311</color>
+    <color name="cafe_2">#8C634A</color>
+    <color name="cafe_oscuro">#593A2e</color>
+
+
+
+
+
+    <color name="medicinafelis1">#3D64D9</color>
+    <color name="medicinafelis2">#6C87D9</color>
+    <color name="medicinafelis3">#A99CA5</color>
+    <color name="medicinafelis4">#B6C5F2</color>
+    <color name="medicinafelis5">#F2F2F2</color>
+
+
+    <color name='kisspngspeechtherapy1'>#F21D2F</color>
+    <color name='kisspngspeechtherapy2'>#8684BF</color>
+    <color name='kisspngspeechtherapy3'>#B9B8D9</color>
+    <color name='kisspngspeechtherapy4'>#2B308C</color>
+    <color name='kisspngspeechtherapy5'>#F2F2F2</color>
+
+    <color name='kisspngspeechpantone1'>#EB3C27</color>
+    <color name='kisspngspeechpantone2'>#7C83BC</color>
+    <color name='kisspngspeechpantone3'>#BAB8D3</color>
+    <color name='kisspngspeechpantone4'>#333E83</color>
+    <color name='kisspngspeechpantone5'>#F2F0EB</color>
+
+    <color name='massagecolor1'>#6568FF</color>
+    <color name='massagecolor2'>#2570E8</color>
+    <color name='massagecolor3'>#23C8FF</color>
+    <color name='massagecolor4'>#6BE8D9</color>
+    <color name='massagecolor5'>#58FFA9</color>
+
+    <color name='therapycolor1'>#F7B1CC</color>
+    <color name='therapycolor2'>#B6A8ED</color>
+    <color name='therapycolor3'>#8FE1F7</color>
+    <color name='therapycolor4'>#F3F79E</color>
+    <color name='therapycolor5'>#9BEBB9</color>#FF996D
+
+    <color name='healthwarm1'>#FF996D</color>
+    <color name='azulcalrito'>#B2EBF2</color>
+
+</resources>
+
